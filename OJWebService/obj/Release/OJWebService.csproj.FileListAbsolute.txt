@@ -1,0 +1,6 @@
+E:\code\C#\OJWebService\OJWebService\bin\OJWebService.dll.config
+E:\code\C#\OJWebService\OJWebService\bin\OJWebService.dll
+E:\code\C#\OJWebService\OJWebService\bin\OJWebService.pdb
+E:\code\C#\OJWebService\OJWebService\obj\Release\OJWebService.dll
+E:\code\C#\OJWebService\OJWebService\obj\Release\OJWebService.pdb
+E:\code\C#\OJWebService\OJWebService\obj\Release\OJWebService.csprojResolveAssemblyReference.cache
