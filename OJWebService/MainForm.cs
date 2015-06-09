@@ -116,7 +116,7 @@ namespace OJWebService
         private void Mining(ScoreFunction score)
         {
             // k 不确定 britain
-            int k = 100;
+            int k = 20;
             GraphMining mining = new GraphMining(this.graphs, new PathChecker(this.nodeInfos), score, k);
             timeWatch.Restart();
             this.results = mining.Mining();

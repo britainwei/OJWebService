@@ -13,12 +13,25 @@ namespace OJWebService
     {
         public void createTestSuiltFolder(TestSuiltContent suilt)
         {
+            init();
             this.createFolder( @"\source\");
             File.WriteAllText(@"\source\sourceFile.c", suilt.source);
             this.createFolder(@"\source\inputs\");
             this.makeFiles(suilt.inputs, @"\source\inputs\t");
             this.createFolder(@"\source\correctoutputs\");
             this.makeFiles(suilt.correctoutputs, @"\source\correctoutputs\t");
+        }
+        /// <summary>
+        /// 删掉上次运行产生的input和correctoutput文件，防止干扰
+        /// </summary>
+        public void init()
+        {
+            try { 
+                Directory.Delete(@"\source\", true);
+            }
+            catch 
+            {
+            }
         }
 
         public void createFolder(String path)
